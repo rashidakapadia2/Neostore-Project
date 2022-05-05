@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterScreenViewController" customModule="Neostore" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFemale" destination="Sds-WX-9uH" id="9Ca-09-kgU"/>
+                <outlet property="btnMale" destination="oZb-Pu-94w" id="FJa-pb-VzX"/>
+                <outlet property="btnRegister" destination="ip2-G6-dzi" id="HW5-C9-ORZ"/>
+                <outlet property="checkbox" destination="ZKt-1q-PKG" id="cd6-qu-QYk"/>
+                <outlet property="scrollView" destination="Ogm-LV-v5d" id="WHE-b8-zDb"/>
+                <outlet property="txtConfirmPassword" destination="48u-qq-5We" id="9Xj-WA-Vda"/>
+                <outlet property="txtEmail" destination="gb1-dL-0oQ" id="jNA-cB-Kh3"/>
+                <outlet property="txtFirstName" destination="Kwu-0L-fTc" id="7xS-39-t8t"/>
+                <outlet property="txtLastName" destination="Sd3-Tn-XEM" id="sLc-DP-ERe"/>
+                <outlet property="txtPassword" destination="F7M-Ju-ODb" id="BcV-sA-3d1"/>
+                <outlet property="txtPhoneNumber" destination="1aH-MD-Tgs" id="HQc-AX-sKn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogm-LV-v5d">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-nV-qGr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NeoSTORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-Bi-Kqy">
+                                    <rect key="frame" x="33" y="50" width="309" height="50"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="45"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rashida" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-0L-fTc">
+                                    <rect key="frame" x="33" y="120" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="VL5-eO-5CL"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                                </textField>
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kapadia" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd3-Tn-XEM">
+                                    <rect key="frame" x="33" y="174" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="st6-mK-huZ"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                </textField>
+                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rash@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-dL-0oQ">
+                                    <rect key="frame" x="33" y="228" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="egz-xv-c1N"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                </textField>
+                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="P@ssw0rd" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7M-Ju-ODb">
+                                    <rect key="frame" x="33" y="282" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="8DA-Xc-URm"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                </textField>
+                                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="P@ssw0rd" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48u-qq-5We">
+                                    <rect key="frame" x="33" y="336" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="E3c-eH-ipZ"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                </textField>
+                                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9155533333" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aH-MD-Tgs">
+                                    <rect key="frame" x="33" y="438" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="2sn-mP-0Ir"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMA-SX-rrH">
+                                    <rect key="frame" x="33" y="399" width="59.5" height="16"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-Nz-zFX">
+                                    <rect key="frame" x="277" y="399" width="65" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="NLB-GU-xD3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDW-5S-1DI">
+                                    <rect key="frame" x="188" y="399" width="45" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="8KQ-3z-Hnk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the terms and conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVU-Cy-CN1">
+                                    <rect key="frame" x="72.5" y="508" width="230" height="13"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="13"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-G6-dzi">
+                                    <rect key="frame" x="33" y="541" width="309" height="47"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="IHb-hP-6cA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
+                                    <state key="normal" title="REGISTER">
+                                        <color key="titleColor" red="0.91372549020000005" green="0.10980392160000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="toRegister:" destination="-1" eventType="touchUpInside" id="ecV-Rv-LcO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKt-1q-PKG">
+                                    <rect key="frame" x="51.5" y="508" width="13" height="13"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="13" id="bK2-Js-vUU"/>
+                                        <constraint firstAttribute="width" constant="13" id="zPp-7K-PYL"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="uncheck_icon"/>
+                                    <state key="selected" image="checked_icon"/>
+                                    <connections>
+                                        <action selector="checkboxTapped:" destination="-1" eventType="touchUpInside" id="4hG-3U-aI9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-WX-9uH">
+                                    <rect key="frame" x="253" y="399" width="16" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="9We-Qj-kOg"/>
+                                        <constraint firstAttribute="width" constant="16" id="JxO-1i-APS"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="chkn"/>
+                                    <state key="selected" image="chky"/>
+                                    <connections>
+                                        <action selector="radioBtnFemaleTapped:" destination="-1" eventType="touchUpInside" id="cFn-BA-j3c"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Pu-94w">
+                                    <rect key="frame" x="164" y="399" width="16" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="Zyy-Ua-zwT"/>
+                                        <constraint firstAttribute="width" constant="16" id="fdM-FK-d4E"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="chkn"/>
+                                    <state key="selected" image="chky"/>
+                                    <connections>
+                                        <action selector="radioBtnMaleTapped:" destination="-1" eventType="touchUpInside" id="smQ-vT-cQk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.1058823529" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="oZb-Pu-94w" firstAttribute="centerY" secondItem="gMA-SX-rrH" secondAttribute="centerY" id="2JK-2a-0YS"/>
+                                <constraint firstItem="Sds-WX-9uH" firstAttribute="leading" secondItem="cDW-5S-1DI" secondAttribute="trailing" constant="20" id="2eV-SI-C5G"/>
+                                <constraint firstItem="F7M-Ju-ODb" firstAttribute="top" secondItem="gb1-dL-0oQ" secondAttribute="bottom" constant="14" id="3AT-Gf-gMg"/>
+                                <constraint firstItem="48u-qq-5We" firstAttribute="trailing" secondItem="Kwu-0L-fTc" secondAttribute="trailing" id="49d-nK-wSR"/>
+                                <constraint firstItem="Sds-WX-9uH" firstAttribute="centerY" secondItem="gMA-SX-rrH" secondAttribute="centerY" id="5zb-ev-sAi"/>
+                                <constraint firstItem="Sd3-Tn-XEM" firstAttribute="top" secondItem="Kwu-0L-fTc" secondAttribute="bottom" constant="14" id="62r-E8-X2E"/>
+                                <constraint firstItem="O7W-Nz-zFX" firstAttribute="centerY" secondItem="Sds-WX-9uH" secondAttribute="centerY" id="7cF-iG-hpe"/>
+                                <constraint firstAttribute="bottom" secondItem="ip2-G6-dzi" secondAttribute="bottom" constant="20" id="8D9-3E-xyY"/>
+                                <constraint firstItem="ip2-G6-dzi" firstAttribute="trailing" secondItem="4Wc-Bi-Kqy" secondAttribute="trailing" id="Ace-85-OJa"/>
+                                <constraint firstItem="1aH-MD-Tgs" firstAttribute="trailing" secondItem="4Wc-Bi-Kqy" secondAttribute="trailing" id="CgA-cw-cql"/>
+                                <constraint firstItem="1aH-MD-Tgs" firstAttribute="leading" secondItem="4Wc-Bi-Kqy" secondAttribute="leading" id="FuH-YE-cc3"/>
+                                <constraint firstItem="F7M-Ju-ODb" firstAttribute="leading" secondItem="Kwu-0L-fTc" secondAttribute="leading" id="HNd-uz-SmY"/>
+                                <constraint firstItem="O7W-Nz-zFX" firstAttribute="leading" secondItem="Sds-WX-9uH" secondAttribute="trailing" constant="8" id="HZN-ML-I0M"/>
+                                <constraint firstItem="1aH-MD-Tgs" firstAttribute="top" secondItem="gMA-SX-rrH" secondAttribute="bottom" constant="23" id="HhK-pt-gyP"/>
+                                <constraint firstItem="cDW-5S-1DI" firstAttribute="centerY" secondItem="oZb-Pu-94w" secondAttribute="centerY" id="Hr1-NU-FJd"/>
+                                <constraint firstItem="ip2-G6-dzi" firstAttribute="leading" secondItem="4Wc-Bi-Kqy" secondAttribute="leading" id="Hre-qI-8rU"/>
+                                <constraint firstItem="gb1-dL-0oQ" firstAttribute="leading" secondItem="Kwu-0L-fTc" secondAttribute="leading" id="K0J-Uc-4fr"/>
+                                <constraint firstItem="gMA-SX-rrH" firstAttribute="leading" secondItem="Kwu-0L-fTc" secondAttribute="leading" id="Ldt-hx-kaD"/>
+                                <constraint firstItem="Sd3-Tn-XEM" firstAttribute="trailing" secondItem="Kwu-0L-fTc" secondAttribute="trailing" id="NTW-hQ-vqv"/>
+                                <constraint firstItem="F7M-Ju-ODb" firstAttribute="trailing" secondItem="Kwu-0L-fTc" secondAttribute="trailing" id="OXd-yG-IWU"/>
+                                <constraint firstItem="gb1-dL-0oQ" firstAttribute="top" secondItem="Sd3-Tn-XEM" secondAttribute="bottom" constant="14" id="Osd-Rk-fQx"/>
+                                <constraint firstItem="Sd3-Tn-XEM" firstAttribute="leading" secondItem="Kwu-0L-fTc" secondAttribute="leading" id="QCd-dw-c1I"/>
+                                <constraint firstItem="1aH-MD-Tgs" firstAttribute="leading" secondItem="Kwu-0L-fTc" secondAttribute="leading" id="Tbh-AB-RLf"/>
+                                <constraint firstItem="cDW-5S-1DI" firstAttribute="leading" secondItem="oZb-Pu-94w" secondAttribute="trailing" constant="8" id="XTD-AF-dAG"/>
+                                <constraint firstItem="4Wc-Bi-Kqy" firstAttribute="leading" secondItem="UnR-nV-qGr" secondAttribute="leading" constant="33" id="aDN-cl-Gpm"/>
+                                <constraint firstItem="4Wc-Bi-Kqy" firstAttribute="top" relation="lessThanOrEqual" secondItem="UnR-nV-qGr" secondAttribute="top" constant="50" id="b0U-rZ-LWg"/>
+                                <constraint firstItem="uVU-Cy-CN1" firstAttribute="leading" secondItem="ZKt-1q-PKG" secondAttribute="trailing" constant="8" id="csf-b9-L96"/>
+                                <constraint firstItem="48u-qq-5We" firstAttribute="leading" secondItem="Kwu-0L-fTc" secondAttribute="leading" id="dv4-nh-IL0"/>
+                                <constraint firstItem="gb1-dL-0oQ" firstAttribute="trailing" secondItem="Kwu-0L-fTc" secondAttribute="trailing" id="fje-zC-rtS"/>
+                                <constraint firstItem="ZKt-1q-PKG" firstAttribute="centerY" secondItem="uVU-Cy-CN1" secondAttribute="centerY" id="gAK-w3-yf7"/>
+                                <constraint firstItem="uVU-Cy-CN1" firstAttribute="centerX" secondItem="UnR-nV-qGr" secondAttribute="centerX" id="gwm-uJ-rj1"/>
+                                <constraint firstItem="uVU-Cy-CN1" firstAttribute="top" secondItem="1aH-MD-Tgs" secondAttribute="bottom" constant="30" id="iqP-nW-i1g"/>
+                                <constraint firstItem="gMA-SX-rrH" firstAttribute="top" secondItem="48u-qq-5We" secondAttribute="bottom" constant="23" id="kMD-6u-ElN"/>
+                                <constraint firstItem="Kwu-0L-fTc" firstAttribute="top" secondItem="4Wc-Bi-Kqy" secondAttribute="bottom" constant="20" id="qdD-qh-FTp"/>
+                                <constraint firstItem="O7W-Nz-zFX" firstAttribute="trailing" secondItem="Kwu-0L-fTc" secondAttribute="trailing" id="vJx-z9-k2v"/>
+                                <constraint firstItem="1aH-MD-Tgs" firstAttribute="trailing" secondItem="Kwu-0L-fTc" secondAttribute="trailing" id="vtZ-pq-d7t"/>
+                                <constraint firstAttribute="trailing" secondItem="4Wc-Bi-Kqy" secondAttribute="trailing" constant="33" id="yAL-yz-iYL"/>
+                                <constraint firstItem="48u-qq-5We" firstAttribute="top" secondItem="F7M-Ju-ODb" secondAttribute="bottom" constant="14" id="zV3-C4-Kc7"/>
+                                <constraint firstItem="ip2-G6-dzi" firstAttribute="top" secondItem="ZKt-1q-PKG" secondAttribute="bottom" constant="20" id="zf0-Vc-2uY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UnR-nV-qGr" firstAttribute="height" secondItem="Ogm-LV-v5d" secondAttribute="height" priority="250" id="7c3-EL-hED"/>
+                        <constraint firstAttribute="bottom" secondItem="UnR-nV-qGr" secondAttribute="bottom" id="d10-8H-eNe"/>
+                        <constraint firstAttribute="trailing" secondItem="UnR-nV-qGr" secondAttribute="trailing" id="kBH-cQ-20X"/>
+                        <constraint firstItem="UnR-nV-qGr" firstAttribute="width" secondItem="Ogm-LV-v5d" secondAttribute="width" id="tKg-hk-tDb"/>
+                        <constraint firstItem="UnR-nV-qGr" firstAttribute="leading" secondItem="Ogm-LV-v5d" secondAttribute="leading" id="tVX-7j-QOH"/>
+                        <constraint firstItem="UnR-nV-qGr" firstAttribute="top" secondItem="Ogm-LV-v5d" secondAttribute="top" id="uV4-te-D95"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9vo-zj-Ag1"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9vo-zj-Ag1" firstAttribute="trailing" secondItem="Ogm-LV-v5d" secondAttribute="trailing" id="3V4-sg-9sU"/>
+                <constraint firstItem="Ogm-LV-v5d" firstAttribute="top" secondItem="9vo-zj-Ag1" secondAttribute="top" id="5PI-zn-YFN"/>
+                <constraint firstItem="Ogm-LV-v5d" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="66n-w7-9hn"/>
+                <constraint firstItem="9vo-zj-Ag1" firstAttribute="bottom" secondItem="Ogm-LV-v5d" secondAttribute="bottom" id="LES-2x-pIV"/>
+                <constraint firstItem="Ogm-LV-v5d" firstAttribute="leading" secondItem="9vo-zj-Ag1" secondAttribute="leading" id="mmh-5C-uMf"/>
+            </constraints>
+            <point key="canvasLocation" x="-652.17391304347836" y="134.5108695652174"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked_icon" width="25" height="25"/>
+        <image name="chkn" width="25" height="25"/>
+        <image name="chky" width="25" height="25"/>
+        <image name="uncheck_icon" width="25" height="25"/>
+    </resources>
+</document>

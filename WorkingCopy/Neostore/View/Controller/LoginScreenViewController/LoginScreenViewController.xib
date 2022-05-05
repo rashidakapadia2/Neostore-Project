@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginScreenViewController" customModule="Neostore" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLogin" destination="8A3-R9-4sP" id="xIx-it-fK0"/>
+                <outlet property="imgPlus" destination="NXQ-NT-cYi" id="fI2-o8-1xH"/>
+                <outlet property="lblDontHaveAnAccount" destination="WX9-1Y-1qh" id="bFk-JY-fYK"/>
+                <outlet property="lblForgotPassword" destination="Kpi-uI-VO0" id="SJX-xc-KuT"/>
+                <outlet property="scrollView" destination="VKY-Be-fgH" id="ptV-5Q-fI6"/>
+                <outlet property="txtPassword" destination="4Z1-md-Z7C" id="rL5-ZX-1bn"/>
+                <outlet property="txtUsername" destination="2GS-1v-5th" id="JU2-iv-XTd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKY-Be-fgH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-44-i4j">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="585"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DONT HAVE AN ACCOUNT?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-1Y-1qh">
+                                    <rect key="frame" x="33" y="538" width="227.5" height="16"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-R9-4sP">
+                                    <rect key="frame" x="33" y="308" width="309" height="50"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="W5Z-Zr-sx3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
+                                    <state key="normal" title="LOGIN">
+                                        <color key="titleColor" red="0.9137254901960784" green="0.10980392156862745" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="toLogin:" destination="-1" eventType="touchUpInside" id="xgK-52-MQs"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpi-uI-VO0">
+                                    <rect key="frame" x="106" y="380" width="163" height="18"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="P@ssw0rd" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Z1-md-Z7C">
+                                    <rect key="frame" x="33" y="234" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.9137254901960784" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="vK4-uS-F1u"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rashidakapadia2@gmail.com" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GS-1v-5th">
+                                    <rect key="frame" x="33" y="180" width="309" height="40"/>
+                                    <color key="backgroundColor" red="0.9137254901960784" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="KOC-pR-TUh"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NeoSTORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FB-oq-ud3">
+                                    <rect key="frame" x="33" y="80" width="309" height="50"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="45"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pluss" translatesAutoresizingMaskIntoConstraints="NO" id="NXQ-NT-cYi">
+                                    <rect key="frame" x="313" y="523" width="46" height="46"/>
+                                    <color key="backgroundColor" red="0.9137254901960784" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="9TQ-Vj-J32"/>
+                                        <constraint firstAttribute="width" constant="46" id="9u8-Oe-0iv"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.9137254901960784" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="8FB-oq-ud3" firstAttribute="top" secondItem="mE3-44-i4j" secondAttribute="top" constant="80" id="47U-da-AV0"/>
+                                <constraint firstItem="8A3-R9-4sP" firstAttribute="trailing" secondItem="8FB-oq-ud3" secondAttribute="trailing" id="BAV-Zc-fvU"/>
+                                <constraint firstAttribute="bottom" secondItem="NXQ-NT-cYi" secondAttribute="bottom" constant="16" id="Ki3-CK-JxE"/>
+                                <constraint firstItem="4Z1-md-Z7C" firstAttribute="top" secondItem="2GS-1v-5th" secondAttribute="bottom" constant="14" id="MEN-oo-SV1"/>
+                                <constraint firstAttribute="trailing" secondItem="NXQ-NT-cYi" secondAttribute="trailing" constant="16" id="QHB-DU-pjv"/>
+                                <constraint firstItem="4Z1-md-Z7C" firstAttribute="trailing" secondItem="8FB-oq-ud3" secondAttribute="trailing" id="TUZ-0H-JYB"/>
+                                <constraint firstItem="2GS-1v-5th" firstAttribute="top" secondItem="8FB-oq-ud3" secondAttribute="bottom" constant="50" id="VSU-yu-1gJ"/>
+                                <constraint firstItem="Kpi-uI-VO0" firstAttribute="centerX" secondItem="8A3-R9-4sP" secondAttribute="centerX" id="Z7E-2z-bSX"/>
+                                <constraint firstItem="4Z1-md-Z7C" firstAttribute="leading" secondItem="8FB-oq-ud3" secondAttribute="leading" id="akH-fB-gJT"/>
+                                <constraint firstItem="8A3-R9-4sP" firstAttribute="leading" secondItem="8FB-oq-ud3" secondAttribute="leading" id="cmG-Ik-7w9"/>
+                                <constraint firstItem="Kpi-uI-VO0" firstAttribute="top" secondItem="8A3-R9-4sP" secondAttribute="bottom" constant="22" id="e3M-aC-SCf"/>
+                                <constraint firstAttribute="trailing" secondItem="8FB-oq-ud3" secondAttribute="trailing" constant="33" id="fIc-26-lhZ"/>
+                                <constraint firstItem="WX9-1Y-1qh" firstAttribute="top" secondItem="Kpi-uI-VO0" secondAttribute="bottom" constant="140" id="fbb-ar-nud"/>
+                                <constraint firstItem="8A3-R9-4sP" firstAttribute="top" secondItem="4Z1-md-Z7C" secondAttribute="bottom" constant="34" id="kXe-xt-8F3"/>
+                                <constraint firstItem="WX9-1Y-1qh" firstAttribute="leading" secondItem="mE3-44-i4j" secondAttribute="leading" constant="33" id="mST-vP-sLI"/>
+                                <constraint firstItem="2GS-1v-5th" firstAttribute="trailing" secondItem="8FB-oq-ud3" secondAttribute="trailing" id="paL-Fc-eXX"/>
+                                <constraint firstItem="8FB-oq-ud3" firstAttribute="leading" secondItem="mE3-44-i4j" secondAttribute="leading" constant="33" id="s5H-qD-Z00"/>
+                                <constraint firstItem="WX9-1Y-1qh" firstAttribute="centerY" secondItem="NXQ-NT-cYi" secondAttribute="centerY" id="wh3-JI-wGH"/>
+                                <constraint firstItem="2GS-1v-5th" firstAttribute="leading" secondItem="8FB-oq-ud3" secondAttribute="leading" id="xw4-6P-CM6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9137254901960784" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mE3-44-i4j" secondAttribute="trailing" id="2fc-m5-6EQ"/>
+                        <constraint firstItem="mE3-44-i4j" firstAttribute="top" secondItem="VKY-Be-fgH" secondAttribute="top" id="3aH-nu-pFm"/>
+                        <constraint firstItem="mE3-44-i4j" firstAttribute="leading" secondItem="VKY-Be-fgH" secondAttribute="leading" id="KED-ke-5dj"/>
+                        <constraint firstItem="mE3-44-i4j" firstAttribute="height" secondItem="VKY-Be-fgH" secondAttribute="height" priority="250" id="g9x-sB-czj"/>
+                        <constraint firstItem="mE3-44-i4j" firstAttribute="width" secondItem="VKY-Be-fgH" secondAttribute="width" id="nUZ-sx-NPq"/>
+                        <constraint firstAttribute="bottom" secondItem="mE3-44-i4j" secondAttribute="bottom" id="tyn-4v-C41"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.9137254901960784" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VKY-Be-fgH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="DKx-5W-fCV"/>
+                <constraint firstItem="VKY-Be-fgH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="epZ-zp-Mbp"/>
+                <constraint firstItem="VKY-Be-fgH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sfI-lp-Ct4"/>
+                <constraint firstItem="VKY-Be-fgH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sna-Fr-Dld"/>
+            </constraints>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pluss" width="840" height="859"/>
+    </resources>
+</document>

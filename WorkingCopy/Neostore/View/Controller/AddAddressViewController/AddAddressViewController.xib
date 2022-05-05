@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAddressViewController" customModule="Neostore" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSaveAddress" destination="hbe-1c-qFN" id="TPR-jH-Oxh"/>
+                <outlet property="txtCity" destination="C2E-SE-pnQ" id="KO3-Jb-CIU"/>
+                <outlet property="txtCityMain" destination="UoI-Hd-GoG" id="UNP-le-hzs"/>
+                <outlet property="txtCountry" destination="0GI-UY-Juh" id="uSO-ib-NeB"/>
+                <outlet property="txtState" destination="Epf-8k-bD5" id="uFj-gT-cp9"/>
+                <outlet property="txtViewAddress" destination="LPW-UC-rar" id="XLf-NN-3La"/>
+                <outlet property="txtZipCode" destination="iLD-b8-L8V" id="aGF-xh-h3A"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFU-pN-iNe">
+                    <rect key="frame" x="13" y="27" width="349" height="17"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYV-AV-a7l">
+                    <rect key="frame" x="13" y="168" width="349" height="17"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZIP CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7N-0o-MsM">
+                    <rect key="frame" x="13" y="358" width="168" height="17"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj8-yY-yAs">
+                    <rect key="frame" x="13" y="263" width="168" height="17"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETc-Oi-VSU">
+                    <rect key="frame" x="194" y="263" width="168" height="17"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4l-eG-Y3e">
+                    <rect key="frame" x="194" y="358" width="168" height="17"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="LANDMARK" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C2E-SE-pnQ">
+                    <rect key="frame" x="13" y="202" width="349" height="34"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MUMBAI" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoI-Hd-GoG">
+                    <rect key="frame" x="13" y="297" width="168" height="34"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="110006" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iLD-b8-L8V">
+                    <rect key="frame" x="13" y="392" width="168" height="34"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-1c-qFN">
+                    <rect key="frame" x="13" y="453" width="349" height="45"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.082352941176470587" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="JTB-VY-qhm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                    <state key="normal" title="SAVE ADDRESS">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveAddressTapped:" destination="-1" eventType="touchUpInside" id="Awb-DL-8OM"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="INDIA" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0GI-UY-Juh">
+                    <rect key="frame" x="194" y="392" width="168" height="34"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" text="4th Floor, The Ruby, 29, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LPW-UC-rar">
+                    <rect key="frame" x="13" y="61" width="349" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="tfm-MO-zFb"/>
+                    </constraints>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MAHARASHTRA" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Epf-8k-bD5">
+                    <rect key="frame" x="194" y="297" width="168" height="34"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v4l-eG-Y3e" firstAttribute="leading" secondItem="R7N-0o-MsM" secondAttribute="trailing" constant="13" id="0zA-AA-Noj"/>
+                <constraint firstItem="R7N-0o-MsM" firstAttribute="leading" secondItem="aFU-pN-iNe" secondAttribute="leading" id="3pc-Iz-5VP"/>
+                <constraint firstItem="hbe-1c-qFN" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" id="4D9-kg-qWV"/>
+                <constraint firstItem="PYV-AV-a7l" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" id="5Lb-pq-hVb"/>
+                <constraint firstItem="ETc-Oi-VSU" firstAttribute="centerY" secondItem="sj8-yY-yAs" secondAttribute="centerY" id="5ml-MO-5VB"/>
+                <constraint firstItem="0GI-UY-Juh" firstAttribute="leading" secondItem="v4l-eG-Y3e" secondAttribute="leading" id="6Of-Eb-aKj"/>
+                <constraint firstItem="hbe-1c-qFN" firstAttribute="leading" secondItem="aFU-pN-iNe" secondAttribute="leading" id="6ph-kA-ikJ"/>
+                <constraint firstItem="Epf-8k-bD5" firstAttribute="top" secondItem="ETc-Oi-VSU" secondAttribute="bottom" constant="17" id="8ca-2q-300"/>
+                <constraint firstItem="aFU-pN-iNe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="9MU-6D-BhR"/>
+                <constraint firstItem="C2E-SE-pnQ" firstAttribute="top" secondItem="PYV-AV-a7l" secondAttribute="bottom" constant="17" id="BWG-ub-vP2"/>
+                <constraint firstItem="R7N-0o-MsM" firstAttribute="top" secondItem="UoI-Hd-GoG" secondAttribute="bottom" constant="27" id="DX4-9S-Kl8"/>
+                <constraint firstItem="C2E-SE-pnQ" firstAttribute="leading" secondItem="aFU-pN-iNe" secondAttribute="leading" id="EfW-va-KkE"/>
+                <constraint firstItem="v4l-eG-Y3e" firstAttribute="centerY" secondItem="R7N-0o-MsM" secondAttribute="centerY" id="GKZ-J5-ips"/>
+                <constraint firstItem="ETc-Oi-VSU" firstAttribute="width" secondItem="sj8-yY-yAs" secondAttribute="width" id="HNR-b6-g6F"/>
+                <constraint firstItem="ETc-Oi-VSU" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" id="JXk-eN-RfX"/>
+                <constraint firstItem="UoI-Hd-GoG" firstAttribute="leading" secondItem="sj8-yY-yAs" secondAttribute="leading" id="KBW-je-Ogk"/>
+                <constraint firstItem="LPW-UC-rar" firstAttribute="top" secondItem="aFU-pN-iNe" secondAttribute="bottom" constant="17" id="Kfq-9W-sSY"/>
+                <constraint firstItem="iLD-b8-L8V" firstAttribute="top" secondItem="R7N-0o-MsM" secondAttribute="bottom" constant="17" id="MHs-dC-tmL"/>
+                <constraint firstItem="UoI-Hd-GoG" firstAttribute="trailing" secondItem="sj8-yY-yAs" secondAttribute="trailing" id="Pzk-KN-iEM"/>
+                <constraint firstItem="LPW-UC-rar" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" id="QUU-Ge-AM0"/>
+                <constraint firstItem="ETc-Oi-VSU" firstAttribute="leading" secondItem="sj8-yY-yAs" secondAttribute="trailing" constant="13" id="QXA-XN-13S"/>
+                <constraint firstItem="LPW-UC-rar" firstAttribute="leading" secondItem="aFU-pN-iNe" secondAttribute="leading" id="RN5-Ik-8Xg"/>
+                <constraint firstItem="PYV-AV-a7l" firstAttribute="leading" secondItem="aFU-pN-iNe" secondAttribute="leading" id="Skc-EG-Q1y"/>
+                <constraint firstItem="sj8-yY-yAs" firstAttribute="leading" secondItem="aFU-pN-iNe" secondAttribute="leading" id="U7y-xQ-mkb"/>
+                <constraint firstItem="PYV-AV-a7l" firstAttribute="top" secondItem="LPW-UC-rar" secondAttribute="bottom" constant="27" id="Y7v-Zw-9WT"/>
+                <constraint firstItem="v4l-eG-Y3e" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" id="Yc1-jo-1dg"/>
+                <constraint firstItem="C2E-SE-pnQ" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" id="ai8-FN-GIT"/>
+                <constraint firstItem="v4l-eG-Y3e" firstAttribute="top" secondItem="Epf-8k-bD5" secondAttribute="bottom" constant="27" id="auq-aI-zCi"/>
+                <constraint firstItem="R7N-0o-MsM" firstAttribute="width" secondItem="v4l-eG-Y3e" secondAttribute="width" id="axe-4v-xaK"/>
+                <constraint firstItem="UoI-Hd-GoG" firstAttribute="top" secondItem="sj8-yY-yAs" secondAttribute="bottom" constant="17" id="e2N-lw-Ny7"/>
+                <constraint firstItem="0GI-UY-Juh" firstAttribute="trailing" secondItem="v4l-eG-Y3e" secondAttribute="trailing" id="e9g-cc-OEH"/>
+                <constraint firstItem="ETc-Oi-VSU" firstAttribute="top" secondItem="C2E-SE-pnQ" secondAttribute="bottom" constant="27" id="gGZ-Cx-dj0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aFU-pN-iNe" secondAttribute="trailing" constant="13" id="hM0-DD-Bxj"/>
+                <constraint firstItem="iLD-b8-L8V" firstAttribute="leading" secondItem="R7N-0o-MsM" secondAttribute="leading" id="khj-Xh-aVx"/>
+                <constraint firstItem="0GI-UY-Juh" firstAttribute="top" secondItem="R7N-0o-MsM" secondAttribute="bottom" constant="17" id="kra-kr-toi"/>
+                <constraint firstItem="hbe-1c-qFN" firstAttribute="top" secondItem="iLD-b8-L8V" secondAttribute="bottom" constant="27" id="oA4-3s-ulI"/>
+                <constraint firstItem="aFU-pN-iNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="ouH-HE-1Y1"/>
+                <constraint firstItem="Epf-8k-bD5" firstAttribute="leading" secondItem="ETc-Oi-VSU" secondAttribute="leading" id="p29-qA-Pht"/>
+                <constraint firstItem="iLD-b8-L8V" firstAttribute="trailing" secondItem="R7N-0o-MsM" secondAttribute="trailing" id="qQd-Sn-lSG"/>
+                <constraint firstItem="Epf-8k-bD5" firstAttribute="trailing" secondItem="ETc-Oi-VSU" secondAttribute="trailing" id="wxL-IV-1gj"/>
+                <constraint firstItem="hbe-1c-qFN" firstAttribute="top" secondItem="0GI-UY-Juh" secondAttribute="bottom" constant="27" id="zXj-U5-r21"/>
+            </constraints>
+            <point key="canvasLocation" x="133.59999999999999" y="125.4872563718141"/>
+        </view>
+    </objects>
+</document>

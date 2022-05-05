@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressListViewController" customModule="Neostore" customModuleProvider="target">
+            <connections>
+                <outlet property="btnPlaceOrder" destination="qTL-2j-rhX" id="mU2-E0-fzA"/>
+                <outlet property="tableviewAddressList" destination="XNb-rn-hbp" id="Jtv-N5-UVK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTL-2j-rhX">
+                    <rect key="frame" x="13" y="602" width="349" height="45"/>
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.08235294118" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="z6z-Ep-Qmj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                    <state key="normal" title="PLACE ORDER">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="placeOrderTapped:" destination="-1" eventType="touchUpInside" id="6ZZ-Vj-0Vb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5K-wU-g4g">
+                    <rect key="frame" x="13" y="12" width="349" height="24"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-rn-hbp">
+                    <rect key="frame" x="13" y="48" width="349" height="474"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p5K-wU-g4g" secondAttribute="trailing" constant="13" id="7Z6-L6-LQF"/>
+                <constraint firstItem="qTL-2j-rhX" firstAttribute="trailing" secondItem="p5K-wU-g4g" secondAttribute="trailing" id="F1S-yT-PkF"/>
+                <constraint firstItem="qTL-2j-rhX" firstAttribute="top" secondItem="XNb-rn-hbp" secondAttribute="bottom" constant="80" id="Hgc-vU-1FX"/>
+                <constraint firstItem="p5K-wU-g4g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="Nqi-Wf-7Hq"/>
+                <constraint firstItem="XNb-rn-hbp" firstAttribute="top" secondItem="p5K-wU-g4g" secondAttribute="bottom" constant="12" id="aVY-3e-Izs"/>
+                <constraint firstItem="XNb-rn-hbp" firstAttribute="leading" secondItem="p5K-wU-g4g" secondAttribute="leading" id="dMS-u6-xuG"/>
+                <constraint firstItem="XNb-rn-hbp" firstAttribute="trailing" secondItem="p5K-wU-g4g" secondAttribute="trailing" id="eNM-Ii-AfP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qTL-2j-rhX" secondAttribute="bottom" constant="20" id="m9n-im-Jit"/>
+                <constraint firstItem="qTL-2j-rhX" firstAttribute="leading" secondItem="p5K-wU-g4g" secondAttribute="leading" id="oVS-QA-pk4"/>
+                <constraint firstItem="p5K-wU-g4g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="vk4-35-Rmy"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="63"/>
+        </view>
+    </objects>
+</document>

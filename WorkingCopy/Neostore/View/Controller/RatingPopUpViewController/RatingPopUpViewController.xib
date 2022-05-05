@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingPopUpViewController" customModule="Neostore" customModuleProvider="target">
+            <connections>
+                <outlet property="MainView" destination="i5M-Pr-FkT" id="6Sk-UD-DLe"/>
+                <outlet property="btnRateNow" destination="WRK-9L-PKy" id="Kx0-CU-Q8A"/>
+                <outlet property="btnStar1" destination="VhB-Ni-w4U" id="Hdm-kK-8NP"/>
+                <outlet property="btnStar2" destination="691-hD-pP0" id="ItX-Ih-PKW"/>
+                <outlet property="btnStar3" destination="QCw-g7-Ruh" id="Cr4-iY-bNc"/>
+                <outlet property="btnStar4" destination="eFq-dG-GAu" id="E0W-sj-BwP"/>
+                <outlet property="btnStar5" destination="zbM-aQ-5xi" id="40j-Dc-lz9"/>
+                <outlet property="imgCenter" destination="0a0-QP-RkD" id="EVY-aU-K4w"/>
+                <outlet property="lblProdName" destination="pDj-IO-Jfu" id="5XJ-6Q-Fdd"/>
+                <outlet property="popUpView" destination="5jW-3m-Lma" id="bsT-gO-q3I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="LazyImageView" customModule="Neostore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jW-3m-Lma">
+                    <rect key="frame" x="13" y="57" width="349" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DINING TABLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDj-IO-Jfu">
+                            <rect key="frame" x="82" y="33" width="185" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="lVL-dQ-cWy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="25"/>
+                            <color key="textColor" red="0.17254901960784313" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0a0-QP-RkD" customClass="LazyImageView" customModule="Neostore" customModuleProvider="target">
+                            <rect key="frame" x="46" y="91" width="257" height="205"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="257" id="Yn0-6D-Y8G"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRK-9L-PKy">
+                            <rect key="frame" x="75.5" y="420" width="198" height="47"/>
+                            <color key="backgroundColor" red="0.85882352939999995" green="0.08235294118" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="198" id="C05-Lp-qYr"/>
+                                <constraint firstAttribute="height" constant="47" id="x11-ob-1qb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                            <state key="normal" title="RATE NOW">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="rateNowTapped:" destination="-1" eventType="touchUpInside" id="trZ-jW-mkm"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qi5-oI-7lK">
+                            <rect key="frame" x="64.5" y="336" width="220" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhB-Ni-w4U">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="6LG-GP-DP7"/>
+                                        <constraint firstAttribute="width" constant="44" id="Kut-MM-mIp"/>
+                                    </constraints>
+                                    <state key="normal" title="Star1" image="star_check"/>
+                                    <connections>
+                                        <action selector="star1Tapped:" destination="-1" eventType="touchUpInside" id="ZOr-ap-28u"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="691-hD-pP0">
+                                    <rect key="frame" x="44" y="0.0" width="44" height="44"/>
+                                    <state key="normal" title="Star2" image="star_check"/>
+                                    <connections>
+                                        <action selector="star2Tapped:" destination="-1" eventType="touchUpInside" id="qnC-Bk-xO1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCw-g7-Ruh">
+                                    <rect key="frame" x="88" y="0.0" width="44" height="44"/>
+                                    <state key="normal" title="Star3" image="star_check"/>
+                                    <connections>
+                                        <action selector="star3Tapped:" destination="-1" eventType="touchUpInside" id="sa2-Z4-ilN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFq-dG-GAu">
+                                    <rect key="frame" x="132" y="0.0" width="44" height="44"/>
+                                    <state key="normal" title="Star4" image="star_check"/>
+                                    <connections>
+                                        <action selector="star4Tapped:" destination="-1" eventType="touchUpInside" id="1Qr-LB-wP3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-aQ-5xi">
+                                    <rect key="frame" x="176" y="0.0" width="44" height="44"/>
+                                    <state key="normal" title="Star5" image="star_check"/>
+                                    <connections>
+                                        <action selector="star5Tapped:" destination="-1" eventType="touchUpInside" id="VIx-M6-30F"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="eFq-dG-GAu" firstAttribute="height" secondItem="VhB-Ni-w4U" secondAttribute="height" id="4lN-Fj-fhX"/>
+                                <constraint firstItem="eFq-dG-GAu" firstAttribute="width" secondItem="VhB-Ni-w4U" secondAttribute="width" id="7xK-HT-um8"/>
+                                <constraint firstItem="zbM-aQ-5xi" firstAttribute="height" secondItem="VhB-Ni-w4U" secondAttribute="height" id="G3l-Qh-scF"/>
+                                <constraint firstItem="691-hD-pP0" firstAttribute="width" secondItem="VhB-Ni-w4U" secondAttribute="width" id="HmK-px-rNa"/>
+                                <constraint firstItem="zbM-aQ-5xi" firstAttribute="width" secondItem="VhB-Ni-w4U" secondAttribute="width" id="PVm-1F-UE1"/>
+                                <constraint firstItem="QCw-g7-Ruh" firstAttribute="height" secondItem="VhB-Ni-w4U" secondAttribute="height" id="Qs9-RF-lYd"/>
+                                <constraint firstItem="QCw-g7-Ruh" firstAttribute="width" secondItem="VhB-Ni-w4U" secondAttribute="width" id="Rbr-nv-B4w"/>
+                                <constraint firstAttribute="height" constant="44" id="da3-2K-rKe"/>
+                                <constraint firstItem="691-hD-pP0" firstAttribute="height" secondItem="VhB-Ni-w4U" secondAttribute="height" id="i3k-Q1-m8r"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0a0-QP-RkD" firstAttribute="centerX" secondItem="5jW-3m-Lma" secondAttribute="centerX" id="6pt-Ja-zwL"/>
+                        <constraint firstItem="qi5-oI-7lK" firstAttribute="top" secondItem="0a0-QP-RkD" secondAttribute="bottom" constant="40" id="7ZV-l0-jMb"/>
+                        <constraint firstAttribute="height" constant="500" id="8a5-8e-adH"/>
+                        <constraint firstItem="pDj-IO-Jfu" firstAttribute="top" secondItem="5jW-3m-Lma" secondAttribute="top" constant="33" id="I1z-3C-x04"/>
+                        <constraint firstItem="WRK-9L-PKy" firstAttribute="centerX" secondItem="5jW-3m-Lma" secondAttribute="centerX" id="UwM-e3-Q3W"/>
+                        <constraint firstItem="0a0-QP-RkD" firstAttribute="top" secondItem="pDj-IO-Jfu" secondAttribute="bottom" constant="33" id="eKO-VZ-jCe"/>
+                        <constraint firstAttribute="bottom" secondItem="WRK-9L-PKy" secondAttribute="bottom" constant="33" id="pNb-t0-8hD"/>
+                        <constraint firstItem="WRK-9L-PKy" firstAttribute="top" secondItem="qi5-oI-7lK" secondAttribute="bottom" constant="40" id="slI-aa-Rio"/>
+                        <constraint firstItem="pDj-IO-Jfu" firstAttribute="centerX" secondItem="5jW-3m-Lma" secondAttribute="centerX" id="tcb-VV-e5J"/>
+                        <constraint firstItem="qi5-oI-7lK" firstAttribute="centerX" secondItem="5jW-3m-Lma" secondAttribute="centerX" id="vpV-DB-PMj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="0.071400926602597267" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5jW-3m-Lma" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="57" id="Dj7-Lw-aqF"/>
+                <constraint firstItem="5jW-3m-Lma" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="Zf3-FO-KyH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5jW-3m-Lma" secondAttribute="trailing" constant="13" id="qhV-tu-ZhY"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="125.4872563718141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star_check" width="44" height="44"/>
+    </resources>
+</document>

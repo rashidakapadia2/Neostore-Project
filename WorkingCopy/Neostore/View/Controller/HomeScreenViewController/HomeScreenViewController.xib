@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="Neostore" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="60d-Ej-zXH" id="aBy-b2-nvb"/>
+                <outlet property="pageController" destination="myc-hP-TPz" id="Xxk-No-HBt"/>
+                <outlet property="scrollView" destination="5zy-JD-095" id="lt7-My-zHt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zy-JD-095">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
+                    <connections>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="ggg-5L-aJT"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="myc-hP-TPz">
+                    <rect key="frame" x="-12.5" y="209" width="400" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="I63-6y-YpI"/>
+                        <constraint firstAttribute="height" constant="20" id="hv7-wB-Eci"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" systemColor="systemRedColor"/>
+                    <color key="currentPageIndicatorTintColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="60d-Ej-zXH">
+                    <rect key="frame" x="14" y="244" width="347" height="408"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QD5-OT-wco">
+                        <size key="itemSize" width="150" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="i5M-Pr-FkT" id="ygS-Ru-sOI"/>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="UVs-m9-RWa"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="60d-Ej-zXH" secondAttribute="trailing" constant="14" id="3Zu-Bp-vK3"/>
+                <constraint firstItem="myc-hP-TPz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Z3-b8-hXU"/>
+                <constraint firstItem="60d-Ej-zXH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="BZ4-aO-tSX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="60d-Ej-zXH" secondAttribute="bottom" constant="15" id="MP1-ab-eKp"/>
+                <constraint firstItem="5zy-JD-095" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RYS-SF-yu3"/>
+                <constraint firstItem="5zy-JD-095" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="RfE-nL-7fw"/>
+                <constraint firstItem="5zy-JD-095" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="frF-gV-C9L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5zy-JD-095" secondAttribute="trailing" id="hwr-f7-QyA"/>
+                <constraint firstItem="5zy-JD-095" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.343328" id="jIs-nS-1Yf"/>
+                <constraint firstItem="60d-Ej-zXH" firstAttribute="top" secondItem="5zy-JD-095" secondAttribute="bottom" constant="15" id="or6-eY-a5d"/>
+                <constraint firstItem="5zy-JD-095" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.343328" id="tTY-r4-g24"/>
+                <constraint firstItem="myc-hP-TPz" firstAttribute="bottom" secondItem="5zy-JD-095" secondAttribute="bottom" id="v1V-dk-dUW"/>
+            </constraints>
+            <point key="canvasLocation" x="133.59999999999999" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
