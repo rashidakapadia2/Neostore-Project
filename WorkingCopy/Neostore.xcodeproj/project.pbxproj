@@ -10,6 +10,7 @@
 		922688B127BBB65800460470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922688B027BBB65800460470 /* AppDelegate.swift */; };
 		922688B327BBB65800460470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922688B227BBB65800460470 /* ViewController.swift */; };
 		922688BB27BBB65A00460470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922688B927BBB65A00460470 /* LaunchScreen.storyboard */; };
+		926B2F9828280CC500CB1506 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 926B2F9728280CC500CB1506 /* Fonts */; };
 		927324E227E46DAD00CD43EC /* MyCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927324E027E46DAD00CD43EC /* MyCartCell.swift */; };
 		927324E327E46DAD00CD43EC /* MyCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927324E127E46DAD00CD43EC /* MyCartCell.xib */; };
 		92759D0527D2501900C6A775 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92759D0427D2501900C6A775 /* Constants.swift */; };
@@ -91,9 +92,6 @@
 		92977EA027ED87A200380F30 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92977E9F27ED87A100380F30 /* Product.swift */; };
 		92977EA227ED87C100380F30 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92977EA127ED87C100380F30 /* Cart.swift */; };
 		92977EA427ED87CF00380F30 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92977EA327ED87CF00380F30 /* Order.swift */; };
-		92991B9627EB244300C6A883 /* Gotham Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92991B9527EB244300C6A883 /* Gotham Bold.otf */; };
-		92991B9827EB245200C6A883 /* Gotham Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92991B9727EB245200C6A883 /* Gotham Medium.otf */; };
-		92991B9A27EB246400C6A883 /* Gotham Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92991B9927EB246400C6A883 /* Gotham Book.otf */; };
 		929D7D1B27FD645E00C167A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929D7D1A27FD645D00C167A6 /* Assets.xcassets */; };
 		929D7D1E27FD683D00C167A6 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929D7D1C27FD683D00C167A6 /* SideMenu.swift */; };
 		929D7D1F27FD683D00C167A6 /* SideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929D7D1D27FD683D00C167A6 /* SideMenu.xib */; };
@@ -116,6 +114,7 @@
 		922688B227BBB65800460470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		922688BA27BBB65A00460470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		922688BC27BBB65A00460470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926B2F9728280CC500CB1506 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		927324E027E46DAD00CD43EC /* MyCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartCell.swift; sourceTree = "<group>"; };
 		927324E127E46DAD00CD43EC /* MyCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCartCell.xib; sourceTree = "<group>"; };
 		92759D0427D2501900C6A775 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -197,9 +196,6 @@
 		92977E9F27ED87A100380F30 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		92977EA127ED87C100380F30 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		92977EA327ED87CF00380F30 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		92991B9527EB244300C6A883 /* Gotham Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Bold.otf"; path = "../../../../Downloads/Gotham Bold.otf"; sourceTree = "<group>"; };
-		92991B9727EB245200C6A883 /* Gotham Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Medium.otf"; path = "../../../../Downloads/Gotham Medium/Gotham Medium.otf"; sourceTree = "<group>"; };
-		92991B9927EB246400C6A883 /* Gotham Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Book.otf"; path = "../../../../Downloads/Gotham Book.otf"; sourceTree = "<group>"; };
 		929D7D1A27FD645D00C167A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929D7D1C27FD683D00C167A6 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		929D7D1D27FD683D00C167A6 /* SideMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenu.xib; sourceTree = "<group>"; };
@@ -606,7 +602,7 @@
 		9279A4E527D716F100DBC6A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				92991B9427EB242800C6A883 /* Fonts */,
+				926B2F9728280CC500CB1506 /* Fonts */,
 				9279A4E627D7173900DBC6A3 /* textfield icons & UI.swift */,
 			);
 			path = Extensions;
@@ -618,16 +614,6 @@
 				929571CA27F45C2900E4BB9F /* Images.swift */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		92991B9427EB242800C6A883 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				92991B9527EB244300C6A883 /* Gotham Bold.otf */,
-				92991B9727EB245200C6A883 /* Gotham Medium.otf */,
-				92991B9927EB246400C6A883 /* Gotham Book.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		92EDDA1727D8D831006D29BE /* Model */ = {
@@ -709,7 +695,6 @@
 				92F1093927DF2BF700ACBBC1 /* AddressListCell.xib in Resources */,
 				927705AC27BCD4EC009FA606 /* MyOrdersViewController.xib in Resources */,
 				927705B827BCD546009FA606 /* MyAccountViewController.xib in Resources */,
-				92991B9627EB244300C6A883 /* Gotham Bold.otf in Resources */,
 				927C010227D5F6C800998FD0 /* ProductViewCell.xib in Resources */,
 				927705B427BCD521009FA606 /* StoreLocatorViewController.xib in Resources */,
 				927705BC27BCD563009FA606 /* EditProfileViewController.xib in Resources */,
@@ -724,14 +709,13 @@
 				922688BB27BBB65A00460470 /* LaunchScreen.storyboard in Resources */,
 				9277057E27BCD331009FA606 /* LoginScreenViewController.xib in Resources */,
 				927A136927DB812700D91FF1 /* StoreLocatorTableViewCell.xib in Resources */,
-				92991B9A27EB246400C6A883 /* Gotham Book.otf in Resources */,
 				9277059027BCD3E6009FA606 /* ProductListingViewController.xib in Resources */,
 				927705A427BCD483009FA606 /* RatingPopUpViewController.xib in Resources */,
 				92F1093D27DF506400ACBBC1 /* ReusableTableViewCell.xib in Resources */,
 				9277059427BCD405009FA606 /* ProductDetailedViewController.xib in Resources */,
-				92991B9827EB245200C6A883 /* Gotham Medium.otf in Resources */,
 				929D7D1B27FD645E00C167A6 /* Assets.xcassets in Resources */,
 				927705A027BCD461009FA606 /* AddressListViewController.xib in Resources */,
+				926B2F9828280CC500CB1506 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

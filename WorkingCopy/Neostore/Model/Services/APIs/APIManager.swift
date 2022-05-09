@@ -16,11 +16,11 @@ class APIManager {
     
     public func performRequest(serviceType: APIServices, completionHandler: @escaping(APIResponse<Any>) -> Void){
         
-        //        Reachability to check network connected or not
-        //                if !Reachability.isConnectedToNetwork(){
-        //                    completionHandler(.failure(error: CustomErrors.noInternet))
-        //                    return
-        //                }
+              //  Reachability to check network connected or not
+                        if !Reachability.isConnectedToNetwork(){
+                            completionHandler(.failure(error: CustomErrors.noInternet))
+                            return
+                        }
         
         
         let session = URLSession.shared
